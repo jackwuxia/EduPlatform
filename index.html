@@ -51,17 +51,17 @@
 </div><!--course selection page-->
 
 <div data-role="page" id="course_content">
-	 <div data-role="panel" id="course_select">
-		<a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-		<h1>点击</h1>
-		<p>课件</p>
-		<p>考试</p>
-		<p>游戏</p>
-	 </div><!--/panel-->
+	<div data-role="panel" id="course_expand_panel">
+		<ul data-role="listview">
+			<li><a href="learn.uwaterloo.ca">课件</a></li>
+			<li><a href="learn.uwaterloo.ca">考试</a></li>
+			<li><a href="learn.uwaterloo.ca">游戏</a></li>
+		</ul>
+	</div><!--/panel-->
 	 
 	 <div data-role="header" data-theme="b">
 	 	<h2>新阳小学</h2>
-		<a href="#course_select" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">点击</a>
+		<a href="#course_expand_panel" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">点击</a>
 	 </div><!--header-->
 	 
 	 <div data-role="main" class="ui-content">
@@ -69,7 +69,8 @@
 </div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-<script src="check.js"></script>
+<script src="check.js"></script><!--check password length-->
+<script src="swipe.js"></script><!--swipe open-->
 </body>
 
 </html>
