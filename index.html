@@ -1,0 +1,75 @@
+<html xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Log In</title>
+<!--include Jquery-->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+</head>
+
+<body>
+<div data-role="page" id="loginpage">
+
+	<div data-role="header" data-theme="a">
+		<h1>Welcome</h1>
+	</div><!--/header-->
+	
+	<div data-role="content" class="ui-content" data-theme="a">
+		<form id="mainloginform" method="post" action="index.html">
+		<input type="text" id="username" placeholder="Username" class="txtfield" tabindex="1"><!--user input-->
+		<input type="password" id="password" placeholder="Password" class="txtfield",tabindex="2"><!--password-->
+		
+		<div data-role="button">
+			<input type="button" id="login" value="Log In">
+		</div><!--button-->
+		<a href="#course_select">hello </a>	
+		Click <a href="http://www.google.com">here</a> to reset password.
+
+	</div><!--page content-->
+	
+</div><!--login page content-->
+
+<div data-role="page" id="course_select">
+	<div data-role="header" data-theme="a">
+	<div style="text-align:left">
+		<p id="schoolname">新阳小学</p>
+		<h1 align="middle">请选择课程</h1>
+		<a href="">退出登录</a>
+		</div>
+	</div>
+	
+	<div data-role="content" class="ui-content" data-theme="a">
+			<div data-role="button">
+			<input type="button" id="coursebutton1" value="数学">
+			<input type="button" id="coursebutton2" value="语文">
+			<input type="button" id="coursebutton3" value="英语">
+			<input type="button" id="coursebutton3" value="物理">			
+			<input type="button" id="coursebutton3" value="化学">
+			<input type="button" id="coursebutton3" value="政治">
+			</div><!--button-->
+	</div>
+	<a href="#course_content">hello </a>	
+</div><!--course selection page-->
+
+<div data-role="page" id="course_content">
+	 <div data-role="panel" id="course_select">
+		<a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+		<h1>点击</h1>
+		<p>课件</p>
+		<p>考试</p>
+		<p>游戏</p>
+	 </div><!--/panel-->
+	 
+	 <div data-role="header" data-theme="b">
+	 	<h2>新阳小学</h2>
+		<a href="#course_select" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">点击</a>
+	 </div><!--header-->
+	 
+	 <div data-role="main" class="ui-content">
+	 </div><!-- content -->
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="check.js"></script>
+</body>
+
+</html>
