@@ -39,19 +39,19 @@
 	
 	<div data-role="content" class="ui-content" data-theme="a">
 			<div data-role="button">
-			<input type="button" id="coursebutton1" value="数学">
-			<input type="button" id="coursebutton2" value="语文">
-			<input type="button" id="coursebutton3" value="英语">
-			<input type="button" id="coursebutton3" value="物理">			
-			<input type="button" id="coursebutton3" value="化学">
-			<input type="button" id="coursebutton3" value="政治">
+			<input type="button" id="math" class="coursename" value="数学">
+			<input type="button" id="chinese" class="coursename" value="语文">
+			<input type="button" id="english" class="coursename" value="英语">
+			<input type="button" id="physics" class="coursename" value="物理">			
+			<input type="button" id="chemistry" class="coursename" value="化学">
+			<input type="button" id="politics" class="coursename" value="政治">
 			</div><!--button-->
 	</div>
 	<a href="#course_content">hello </a>	
 </div><!--course selection page-->
 
 <div data-role="page" id="course_content">
-	<div data-role="panel" id="course_expand_panel">
+	<div data-role="panel" data-theme="d" id="course_expand_panel">
 		<ul data-role="listview">
 			<li><a href="learn.uwaterloo.ca">课件</a></li>
 			<li><a href="learn.uwaterloo.ca">考试</a></li>
@@ -64,13 +64,13 @@
 		<a href="#course_expand_panel" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">点击</a>
 	 </div><!--header-->
 	 
-	 <div data-role="main" class="ui-content">
+	 <div data-role="main" class="ui-content" id="inclass_content">
+	 <p id="test1">hi</p>
 	 </div><!-- content -->
 </div>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-<script src="check.js"></script><!--check password length-->
-<script src="swipe.js"></script><!--swipe open-->
+<script src="loadcontent.js"></script>
 </body>
 
 </html>
