@@ -1,0 +1,46 @@
+<html xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Log In</title>
+<!--include Jquery-->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+</head>
+
+<body>
+<div data-role="page" id="signin">
+
+	<div data-role="header" data-theme="b">
+		<h2>建立账号</h2>
+	</div><!--header-->
+	
+	<div data-role="content" class="ui-content" data-theme="a" id="demoinfo">
+		<form id="mainloginform" method="post">
+			<input type="text" id="username" placeholder="姓名" class="txtfield" tabindex="1"><!--user input-->
+			<input type="password" id="password" placeholder="密码" class="txtfield",tabindex="2"><!--password-->
+			<input type="password" id="password_confirm" placeholder="确认密码" class="txtfield",tabindex="2"><!--password-->
+			<input type="text" id="demo_phone" placeholder="电话" class="txtfield",tabindex="2">
+			<input type="text" id="demo_email" placeholder="电子邮箱" class="txtfield",tabindex="2">
+			
+	    <div class="ui-grid-b">
+			<div class="ui-block-a"><input type="text" id="input1"></div>
+			<div class="ui-block-b"><input type="text" id="checkCode" class="code"></div>
+			<div class="ui-block-c"><a href="#" onclick="createCode()">看不清楚</a></div>
+		</div>
+		
+		</form>
+	
+		<div data-role="button">
+			<input type="button" id="submit" value="提交" onclick="validate()" data-icon="check" data-inline="true">
+			<input type="button" id="cancel" value="取消" data-icon="delete" data-inline="true">
+		</div><!--button-->
+		
+	</div><!--page content--> 
+	
+</div><!--login page content-->
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="loginscript.js"></script>
+<script language="javascript" src = "captcha.js"></script>      
+<link rel="stylesheet" type="text/css" href="captcha.css">
+</body>
